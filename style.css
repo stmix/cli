@@ -274,6 +274,7 @@
         font-size: 25px;
         padding: 15px 10px 0px 10px;
         margin:10px;
+        border-radius: 15%;
     }
 
     a {
