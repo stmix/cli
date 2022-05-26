@@ -86,11 +86,11 @@
     {
         border: 2px solid #212121;
         background-color: #a0a0a0;
-        color: #ffffff;
+        color: #000000;
         text-align: center;
         margin-top: 20px;
         padding: 10px 15px 10px;
-        border-radius: 10px 30px;
+        border-radius: 5px 15px;
     }
     a
     {
@@ -267,7 +267,7 @@
     .guzik {
         border: 2px solid #212121;
         background-color: #a0a0a0;
-        color: #ffffff;
+        color: #000000;
         line-height: 38px;
         min-height: 50px;
         display:block;
@@ -275,7 +275,7 @@
         font-size: 25px;
         padding: 15px 10px 0px 10px;
         margin:10px;
-        border-radius: 10px 30px;
+        border-radius: 5px 15px;
     }
 
     a {
