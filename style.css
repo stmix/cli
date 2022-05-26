@@ -1,0 +1,348 @@
+@media only screen and (min-width: 901px)
+{
+    #tlo 
+    {
+        background-color: #000000;
+    }
+    body
+    {
+        font-family: 'Merriweather', serif;
+        margin: 0 auto;
+    }
+    #header 
+    {
+        background-color: #602020;
+        font-size: 30px;
+        padding: 10px;
+        text-align: center;
+        color:#ffffff;
+    }
+    #header a:visited
+    {
+        color:#fff;
+    }
+    #header a:hover
+    {
+        color:#eee;
+    }
+    #hello {
+        text-align: center;
+        padding: 10px;
+        font-size: 15px;
+        background-color: #602020;
+        color: #ffffff;
+        border-top: 2px dashed #aaa;
+        border-bottom: 2px dashed #aaa;
+    }
+    #cont
+    {
+        display:flex;
+    }
+        #sidebar
+        {
+            font-size: 20px;
+            color: white;
+            float: left;
+            background-color: #602020;
+            height: 730px;
+            padding: 15px;
+            width: 17%;
+            letter-spacing: 2px;
+            border-right: 2px dashed #aaa;
+        }
+        #sidebar a
+        {
+            position: relative;
+        }
+        #content
+        {
+            float: left;
+            background-color: #111111;
+            color: #ffffff;
+            height: 700px;
+            width: 90%;
+            padding: 30px;
+        }
+        #sidebarR {
+            color: #ffffff;
+            float: left;
+            background-color: #602020;
+            height: 740px;
+            min-width: 190px;
+            border-left: 2px dashed #aaa;
+            padding: 10px;
+        }
+    #footer 
+    {
+        background-color: #602020;
+        height: 60px;
+        padding: 10px;
+        text-align: center;
+        border-top: 2px dashed #aaa;
+        color: #ffffff;
+        clear: both;
+    }
+    .guzik
+    {
+        border: 2px dashed #aaa;
+        background-color: #111111;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 20px;
+        padding: 7px 0px 7px;
+    }
+    a
+    {
+        color: black;
+        text-decoration: none;
+    }
+    .guzik:hover
+    {
+        opacity:0.85;
+    }
+    #zegarek {
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 40px;
+        text-align: center;
+    }
+    .bugatti
+    {
+        float:right;
+        position: relative;
+        width:35%;
+      
+    }
+    #opis
+    {
+        float:left;
+        width:65%;
+    }
+    #kalendarz
+    {
+        position:initial;
+        margin: 0 auto;
+    }
+
+    #wysw {
+        font-family: 'Rajdhani', sans-serif;
+        color: #222222;
+        position: fixed;
+        top: auto;
+        bottom: 69px;
+        font-size: 28px;
+        right: 96px;
+    }
+    .autoL
+    {
+        transition: 9999999s ease;
+        width: 20%;
+    }
+    .autoP 
+    {
+        transition: 9999999s ease;
+        width:20%;
+        position:relative;
+        transform: translateX(400%);
+    }
+    .rekord:hover
+    {
+        cursor:pointer;
+        color:gainsboro;
+        text-decoration:underline;
+    }
+    #button {
+        font-family: 'Merriweather', serif;
+        font-size: 25px;
+        height: 35px;
+        margin-left: 50px;
+        width: 100px;
+        color: black;
+    }
+    #divlosuj
+    {
+        position: absolute; 
+	    margin: auto;  
+	    top: 0;  
+	    right: 0;  
+    	bottom: 0;  
+    	left: 0;
+    }
+    #losuj
+    {
+        font-family: 'Merriweather', serif;
+        font-size: 25px;
+        height: 40px;
+        margin-left:50px;
+        width: 40%;
+        color: black;
+    }
+    #los
+    {
+        font-size:30px;
+        text-align:center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #tlo {
+        background-color: #000000;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    body {
+        font-family: 'Merriweather', serif;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #header {
+        background-color: #602020;
+        font-size: 25px;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #hello {
+        text-align: center;
+        font-size: 15px;
+        background-color: #602020;
+        color: #ffffff;
+        border-top: 2px dashed #aaa;
+        border-bottom: 2px dashed #aaa;
+        margin: 0px;
+        padding: 20px;
+    }
+
+    #sidebar {
+        font-size: 20px;
+        color: white;
+        background-color: #602020;
+        letter-spacing: 2px;
+        padding: 15px 20px 15px 20px;
+        min-height: 60px;
+        text-align: center;
+        border-bottom: 2px dashed #aaa;
+    }
+    #sidebar 
+    {
+        font-size: 20px;
+        color: white;
+        background-color: #602020;
+        letter-spacing: 2px;
+        min-height: 60px;
+        padding: 15px 20px 15px 20px;
+        border-bottom: 2px dashed #aaa;
+    }
+    #sidebar a 
+    {
+        position: relative;
+    }
+    #content {
+        background-color: #111111;
+        color: #ffffff;
+        height: 1000px;
+        padding: 20px;
+        margin: 0px;
+    }
+
+    #sidebarR {
+        color: #ffffff;
+        background-color: #602020;
+        margin: 0px;
+        border-top: 2px dashed #aaa;
+    }
+
+    #footer {
+        background-color: #602020;
+        text-align: center;
+        border-top: 2px dashed #aaa;
+        color: #ffffff;
+        padding-bottom: 20px;
+    }
+
+    .guzik {
+        border: 2px dashed #aaa;
+        background-color: #111111;
+        color: #ffffff;
+        line-height: 38px;
+        min-height: 50px;
+        display:block;
+        vertical-align: middle;
+        font-size: 25px;
+        padding: 15px 10px 0px 10px;
+        margin:10px;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .guzik:hover {
+        opacity: 0.85;
+    }
+
+    #zegarek {
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .bugatti {
+        position: static;
+        right: 20px;
+        width:50%;
+    }
+    #kalendarz {
+        width:190px;
+        margin: 0 auto;
+        padding-bottom:15px;
+    }
+    #wysw {
+        font-family: 'Rajdhani', sans-serif;
+        color: #222222;
+        position: fixed;
+        top: auto;
+        bottom: 69px;
+        font-size: 28px;
+        right: 96px;
+    }
+    #header a:visited 
+    {
+        color: #fff;
+    }
+    .autoL
+    {
+        transition: 9999999s ease;
+        width: 20%;
+    }
+    .autoP
+    {
+        transition: 9999999s ease;
+        width: 20%;
+        position: relative;
+        transform: translateX(400%);
+    }
+    .rekord:hover {
+        cursor: pointer;
+        color: gainsboro;
+        text-decoration: underline;
+    }
+    #losuj {
+        font-family: 'Merriweather', serif;
+        font-size: 25px;
+        height: 40px;
+        margin-left: 50px;
+        width: 300px;
+        color: black;
+    }
+
+    #los {
+        font-size: 30px;
+        text-align: center;
+    }
+}

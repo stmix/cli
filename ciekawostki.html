@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Motoryzacyjne rekordy</title>
+    <meta name="description" content="Na tej stronie znajdziesz informacje o najszybszych samochodach świata." />
+    <meta name="keywords" content="samochód, auto, szybkie auta, rekordy prędkości" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Michał Stefański" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="kolory.js"></script>
+    <script src="losuj.js"></script>
+    <script src="taniec.js"></script>
+</head>
+
+<body onload="wczytajKolorBiezacy()">
+    <div id="tlo">
+        <a href="index.html">
+            <div id="header" class="colored">
+                <h1>Motoryzacyjne rekordy prędkości</h1>
+            </div>
+        </a>
+        <div id="hello" class="colored">
+            <span style="font-size: 22px">Witaj!</span><br />Interesujesz się motoryzacją?&nbsp;&nbsp;&nbsp;Chciałbyś poznać kilka faktów na temat rekordów z nią związanych?&nbsp;&nbsp;&nbsp;Właśnie znalazłeś źródło wiedzy, którego potrzebujesz!<br />Jeśli natomiast bliżej Ci do niedzielnego kierowcy niż do szalonego rajdowca...&nbsp;&nbsp;&nbsp;Strzeż się!&nbsp;&nbsp;&nbsp;Przyjrzenie się przedstawionym informacjom może obudzić w Tobie motoryzacyjnego lwa!
+        </div>
+        <div id="cont">
+            <div id="sidebar" class="colored">
+                <a href="index.html"><div class="guzik">Strona główna</div></a>
+                <a href="rekordy.html"><div class="guzik">Rekordy</div></a>
+                <a href="najsam.html"><div class="guzik">Najszybszy samochód świata</div></a>
+                <a href="ciekawostki.html"><div class="guzik">Ciekawostki</div></a>
+            </div>
+            <div id="content">
+                <h1>Ciekawostki</h1>
+                <br />
+                <br />
+                <div id="los">
+                    <script>
+                        t = [
+                        "Rekord prędkości jednośladu wynosi 605.69 km/h.",
+                        "Rekord prędkości pociągu wynosi 574,8 km/h.",
+                        "Granicę 100 km/h przekroczono już w 1899 roku. Belg Camille Jenatzy rozpędził elektryczny pojazd do 105,88 km/h.",
+                        "<img style='width:40%' src='img/ciek/c3.jpg' alt='Zdjęcie związane z treścią ciekawostki.'/><br/><br/>W 1927 roku Henry Segrave za kierownicą 1000-konnego Sunbeama jako pierwszy przekroczył barierę 200 mil na godzinę (320 km/h).",
+                        "<img style='width:40%' src='img/ciek/c2.jpg' alt='Zdjęcie związane z treścią ciekawostki.'/><br/><br/>W 1914 po raz pierwszy ustanowiono rekord w postaci średniej z dwóch przejazdów w przeciwnych kierunkach.",
+                        "<img style='width:40%' src='img/ciek/c1.jpg' alt='Zdjęcie związane z treścią ciekawostki.'/><br/><br/>Pierwszy samochód spalinowy, który przekroczył 200 km/h. W 1909 roku dokonał tego Victor Hémery.",
+                        "Niektórzy XIX-wieczni medycy byli przekonani, że człowiek nie przeżyje prędkości przekraczającej 100 km/h z powodu utraty tchu i paraliżu układu nerwowego.",
+                        "<img style='width:40%' src='img/ciek/c4.jpg' alt='Zdjęcie związane z treścią ciekawostki.'/><br/><br/>Malcolm Campbell w kokpicie słynnego „Błękitnego Ptaka” z lotniczym silnikiem Rolls-Royce’a, którym pokonał granicę 300 mil na godzinę (480 km/h).",
+                        "<img style='width:40%' src='img/ciek/c5.jpg' alt='Zdjęcie związane z treścią ciekawostki.'/><br/><br/>Nieco ponad 70 lat po przekroczeniu 100 km/h przez Jenatzy’ego - w roku 1970 - rakietowy „Błękitny Płomień” prowadzony przez Gary’ego Gabelicha uzyskał średnią prędkość 1014,656 km/h.",
+                        "<img style='width:40%' src='img/ciek/c6.jpg' alt='Zdjęcie związane z treścią ciekawostki.'/><br/><br/>„Złota Strzała”, którą w 1929 roku Henry Segrave uzyskał 372,459 km/h. Otrzymał za ten wyczyn tytuł „Sir”.",
+                        "<img style='width:40%' src='img/ciek/c7.jpg' alt='Zdjęcie związane z treścią ciekawostki.'/><br/><br/>„Błękitny Ptak” Malcolma Campbella w wersji z lotniczym silnikiem 36,7 litra V12 firmy Rolls-Royce bił rekordy od 1933 do 1935 roku, osiągając 484,598 km/h.",
+                        "1.10.2020 brytyjski multimilioner Zef Eisenberg zginął podczas próby pobicia rekordu, pędząc z prędkością 334 km/h"
+                        ];
+                    </script>
+                </div>
+                <br />
+                <br />
+                <button id="losuj" class="ui-state-default ui-corner-all">Losuj ciekawostkę!</button>
+            </div>
+            <div id="sidebarR" class="colored">
+                <div id="zegarek">
+                    <script src="zegarek.js">
+                    </script>
+                </div>
+                <br />
+                <div id="kalendarz">
+                    <script src="kalendarz.js"></script>
+                </div>
+            </div>
+        </div>
+        <!-- TU POWYZEJ JEST DIV I W NIM 4 DIVY A W INNYCH HTMLACH NIE MA -->
+        <div id="footer" class="colored">
+            <br />
+            Michał Stefański 2020 &copy; Wszelkie prawa zastrzeżone.
+        </div>
+    </div>
+</body>
+</html>

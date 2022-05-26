@@ -13,6 +13,7 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="kolory.js"></script>
+    <script src="zdjecia.js"></script>
     <script src="taniec.js"></script>
 </head>
 
@@ -34,28 +35,33 @@
                 <a href="ciekawostki.html"><div class="guzik">Ciekawostki</div></a>
             </div>
             <div id="content">
-                <div><img class="bugatti" alt="samochód" src="https://www.auto-motor-i-sport.pl/media/lib/2742/2021-bugatti-chiron-super-sport-300-43d471040a9ad0ccd22500e5353d5b89.jpg" /></div>
-                <div id="opis" style="line-height:25px">
-                    <h1>Najszybszy samochód świata</h1>
-                    <h2>Bugatti Chiron Super Sport 300+</h2>
-                    <br /><br />
-                    Rekord prędkości: 490 km/h
-                    <br />Moc silnika: 1600 KM
-                    <br /><br />
-                    Bugatti Chiron Super Sport 300+, jak sugeruje nazwa, jest pierwszym seryjnie produkowanym samochodem, który przekroczył barierę prędkości 300 mph.
-                    <br /><br />
-                    Cena najnowszego supersamochodu Bugatti to koszt rzędu 2,9 miliona euro.
-                    <br />
-                    <br />
-                    Przyspieszenie 0–100 km/h: 2,4 s.<br />
-                    Przyspieszenie 0–200 km/h: 6,5 s.<br />
-                    Przyspieszenie 0–300 km/h: 13,6 s
-                    <br /><br />
-                    Silnik:	W16 8 l QuadTurbo 1500 KM<br />
-                    Skrzynia biegów: 7-biegowa automatyczna, dwusprzęgłowa
-                </div>
+                <h2>Rekordy</h2>
+                <span style="font-size:10px">(Kliknij na rekord, aby wyświetlić fotografię)</span><br /><br />
+                <span class="rekord" id="rek0" onclick="zdjecie(0)">1898 - Gaston de Chasseloup-Laubat - 63 km/h</span>
                 <br />
-
+                <br />
+                <span class="rekord" id="rek1" onclick="zdjecie(1)">1904 - Henry Ford - 147 km/h</span>
+                <br />
+                <br />
+                <span class="rekord" id="rek2" onclick="zdjecie(2)">1906 - Fred Marriott - 205 km/h</span>
+                <br />
+                <br />
+                <span class="rekord" id="rek3" onclick="zdjecie(3)">1927 - Henry Segrav - 328 km/h</span>
+                <br />
+                <br />
+                <span class="rekord" id="rek4" onclick="zdjecie(4)">1947 - John Cobb - 634 km/h</span>
+                <br />
+                <br />
+                <span class="rekord" id="rek5" onclick="zdjecie(5)">1963 - Craig Breedlove - 657 km/h</span>
+                <br />
+                <br />
+                <span class="rekord" id="rek6" onclick="zdjecie(6)">1965 - Craig Breedlove - 894 km/h</span>
+                <br />
+                <br />
+                <span class="rekord" id="rek7" onclick="zdjecie(7)">1983 - Richard Noble - 1020 km/h</span>
+                <br />
+                <br />
+                <span class="rekord" id="rek8" onclick="zdjecie(8)">1997 - Andy Green - 1228 km/h</span>
             </div>
             <div id="sidebarR" class="colored">
                 <div id="zegarek">
