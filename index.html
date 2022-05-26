@@ -1,268 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Motoryzacyjne rekordy</title>
-        <meta name="description" content="Na tej stronie znajdziesz informacje o najszybszych samochodach świata." />
-        <meta name="keywords" content="samochód, auto, szybkie auta, rekordy prędkości" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta name="author" content="Michał Stefański" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="styl.css" />
-    </head>
-    
-    <body>
-        <div id="tlo">
-            <div class="header">
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Motoryzacyjne rekordy</title>
+    <meta name="description" content="Na tej stronie znajdziesz informacje o najszybszych samochodach świata." />
+    <meta name="keywords" content="samochód, auto, szybkie auta, rekordy prędkości" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Michał Stefański" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="slider.js"></script>
+    <script src="kolory.js"></script>
+    <script src="auto.js"></script>
+    <script src="jazda.js"></script>
+    <script src="szerokosc.js"></script>
+    <script src="taniec.js"></script>
+
+</head>
+
+<body onload="wczytajKolor();wczytajKolorBiezacy();wczytajPredkoscBiezaca()">
+    <div id="tlo">
+        <a href="index.html">
+            <div id="header" class="colored">
                 <h1>Motoryzacyjne rekordy prędkości</h1>
             </div>
-            <div class="hello">
-                <span style="font-size: 22px">Witaj!</span><br />Interesujesz się motoryzacją?&nbsp;&nbsp;&nbsp;Chciałbyś poznać kilka faktów na temat rekordów z nią związanych?&nbsp;&nbsp;&nbsp;Właśnie znalazłeś źródło wiedzy, którego potrzebujesz!<br />Jeśli natomiast bliżej Ci do niedzielnego kierowcy niż do szalonego rajdowca...&nbsp;&nbsp;&nbsp;Strzeż się!&nbsp;&nbsp;&nbsp;Przyjrzenie się przedstawionym informacjom może obudzić w Tobie motoryzacyjnego lwa!
-            </div>
-            <div class="cont">
-            <div class="sidebar">
+        </a>
+        <div id="hello" class="colored">
+            <span style="font-size: 22px">Witaj!</span><br />Interesujesz się motoryzacją?&nbsp;&nbsp;&nbsp;Chciałbyś poznać kilka faktów na temat rekordów z nią związanych?&nbsp;&nbsp;&nbsp;Właśnie znalazłeś źródło wiedzy, którego potrzebujesz!<br />Jeśli natomiast bliżej Ci do niedzielnego kierowcy niż do szalonego rajdowca...&nbsp;&nbsp;&nbsp;Strzeż się!&nbsp;&nbsp;&nbsp;Przyjrzenie się przedstawionym informacjom może obudzić w Tobie motoryzacyjnego lwa!
+        </div>
+        <div id="cont">
+            <div id="sidebar" class="colored">
                 <a href="index.html"><div class="guzik">Strona główna</div></a>
-                <a href="bio.html"><div class="guzik">O autorze</div></a>
+                <a href="rekordy.html"><div class="guzik">Rekordy</div></a>
                 <a href="najsam.html"><div class="guzik">Najszybszy samochód świata</div></a>
                 <a href="ciekawostki.html"><div class="guzik">Ciekawostki</div></a>
             </div>
-            <div class="content">
-                <div id="opis">
-                    <h2>O autorze</h2>
-                    <h1>Bugatti Chiron Super Sport 300+</h1>Rekord prędkości: 490 km/h
+            <div id="content">
+                <h2>Strona główna</h2>
+                <div style="height:130px; width:100%">
+                    <div id="auto" class="autoL">
+                        <img src="img/auto.png" style="width:100%" alt="samochod" />
+                    </div>
                 </div>
-                <br />
-                <div><img class="bugatti" style="max-width:300px" src="https://www.auto-motor-i-sport.pl/media/lib/2742/2021-bugatti-chiron-super-sport-300-43d471040a9ad0ccd22500e5353d5b89.jpg" /></div>
+                <button id="button" class="ui-state-default ui-corner-all" style="font-family: 'Merriweather', serif; font-size: 25px; height: 35px; margin-left: 50px; width: 100px; color: black;">Jazda!</button>
             </div>
-            <div class="sidebarR">
+            <div id="sidebarR" class="colored">
                 <div id="zegarek">
-                    <script type="text/javascript" src="zegarek.js">
+                    <script src="zegarek.js">
                     </script>
                 </div>
+                <br />
+                <div id="kalendarz">
+                    <script src="kalendarz.js"></script>
+                </div>
+                <br />
+                <form>
+                    <label for="kolor-tla-wybor">Kolor tła: </label>
+                    <input type="color" name="kolor-tla" id="kolor-tla-wybor" />
+                    <br />
+                    <button onclick="defaultColor()">Przywróć kolor domyślny</button>
+                </form>
+                <p>
+                    <label for="amount"></label>
+                    <input type="text" id="amount" readonly style="display: none; width:80px; border:0; color:#f6931f; font-weight:bold;">
+                </p>
+
+                <div id="slider-vertical" style="position:fixed; width: 160px; bottom:20px; right: 35px; margin-left:10px;"></div>
+                <br /><br />
+                <div>
+                    <img id="vel" style="width:170px; position: fixed; bottom: 50px; right: 33px;" src="img/predkosciomierz.png" alt="predkosciomierz" />
+                    <img id="wskazowka" style="width:170px; position:fixed; bottom: 50px; right: 33px;" src="img/wskazowka.png" alt="wskazowka" />
+                    <span id="wysw">
+                        0
+                    </span>
+                </div>
             </div>
-            </div>
-                <!-- TU POWYZEJ JEST DIV I W NIM 4 DIVY A W INNYCH HTMLACH NIE MA -->
-        <div class="footer">
+        </div>
+        <!-- TU POWYZEJ JEST DIV I W NIM 4 DIVY A W INNYCH HTMLACH NIE MA -->
+        <div id="footer" class="colored">
             <br />
             Michał Stefański 2020 &copy; Wszelkie prawa zastrzeżone.
         </div>
-        </div>
-        <style>
-    @media only screen and (min-width: 901px)
-    {
-        #tlo 
-        {
-            background-color: #000000;
-        }
-        body
-        {
-            font-family: 'Merriweather', serif;
-        }
-        .header 
-        {
-            background-color: #602020;
-            font-size: 30px;
-            padding: 10px;
-            color: white;
-            text-align: center;
-        }
-        .hello {
-            text-align: center;
-            padding: 10px;
-            font-size: 15px;
-            background-color: #401515;
-            color: #ffffff;
-            border-top: 3px dashed #111111;
-            border-bottom: 3px dashed #111111;
-        }
-        .cont
-        {
-            display:flex;
-        }
-            .sidebar
-            {
-                font-size: 20px;
-                color: white;
-                float: left;
-                background-color: #602020;
-                height: 730px;
-                padding: 15px;
-                width: 17%;
-                letter-spacing: 2px;
-                border-right: 3px dashed #111111;
-            }
-            .content
-            {
-                float: left;
-                background-color: #111111;
-                color: #ffffff;
-                height: 700px;
-                width: 90%;
-                padding: 30px;
-            }
-    
-            .sidebarR {
-                color: #ffffff;
-                float: left;
-                background-color: #602020;
-                height: 730px;
-                width: 15%;
-                border-left: 3px dashed #111111;
-                padding: 15px;
-            }
-    
-            .footer {
-                background-color: #602020;
-                height: 60px;
-                padding: 10px;
-                text-align: center;
-                border-top: 3px dashed #111111;
-                color: #ffffff;
-                clear: both;
-            }
-        .guzik
-        {
-            border: 2px dashed #602020;
-            background-color: #111111;
-            color: #ffffff;
-            text-align: center;
-            margin-top: 20px;
-            padding: 7px 0px 7px;
-        }
-        a
-        {
-            color: black;
-            text-decoration: none;
-        }
-        .guzik:hover
-        {
-            background-color: #aaaaaa;
-            color: #000000;
-        }
-        #zegarek {
-            font-weight: bold;
-            color: #ffffff;
-            font-size: 35px;
-            text-align: center;
-        }
-        .bugatti
-        {
-            float:right;
-            position: relative;
-          
-        }
-        #opis
-        {
-            float:left;
-        }
-    }
-    
-    
-    
-    
-    
-    
-    @media only screen and (max-width: 900px) {
-        #tlo {
-            background-color: #000000;
-            width: 90%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    
-        body {
-            font-family: 'Merriweather', serif;
-            text-align: center
-        }
-    
-        .header {
-            background-color: #602020;
-            font-size: 30px;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-    
-        .hello {
-            text-align: center;
-            font-size: 20px;
-            background-color: #401515;
-            color: #ffffff;
-            border-top: 3px dashed #111111;
-            border-bottom: 3px dashed #111111;
-            margin: 0px;
-            padding: 20px;
-        }
-    
-        .sidebar {
-            font-size: 20px;
-            color: white;
-            background-color: #602020;
-            letter-spacing: 2px;
-            padding: 15px 20px 15px 20px;
-            min-height: 60px;
-            text-align: center;
-        }
-    
-        .content {
-            background-color: #111111;
-            color: #ffffff;
-            height: 1000px;
-            padding: 20px;
-            margin: 0px;
-        }
-    
-        .sidebarR {
-            color: #ffffff;
-            background-color: #602020;
-            margin: 0px;
-            border-left: 3px dashed #111111;
-        }
-    
-        .footer {
-            background-color: #602020;
-            text-align: center;
-            border-top: 3px dashed #111111;
-            color: #ffffff;
-            padding: 20px;
-        }
-    
-        .guzik {
-            border: 2px dashed #602020;
-            background-color: #111111;
-            color: #ffffff;
-            line-height: 38px;
-            min-height: 50px;
-            display:block;
-            vertical-align: middle;
-            font-size: 29px;
-            padding: 15px 0px 3px 0px;
-            margin:10px;
-        }
-    
-        a {
-            color: black;
-            text-decoration: none;
-        }
-    
-        .guzik:hover {
-            background-color: #aaaaaa;
-            color: #000000;
-        }
-    
-        #zegarek {
-            font-weight: bold;
-            color: #ffffff;
-            font-size: 35px;
-            text-align: center;
-        }
-    
-        .bugatti {
-            position: static;
-            right: 20px;
-        }
-    }
-        </style>
-    </body>
+    </div>
+</body>
 </html>
