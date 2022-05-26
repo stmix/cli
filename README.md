@@ -6,13 +6,13 @@ Strona internetowa powstała na własne potrzeby w celu nauki HTML, CSS, JavaScr
 
 ## Funkcjonalność
 
-Podstrony:
+### Podstrony:
   - Rekordy,
   - Najszybszy samochód świata,
   - Ciekawostki,
   - O autorze
   
-Inne funkcjonalności
+### Inne funkcjonalności:
   - elementy biblioteki jQuery np. slider,
   - zegar i kalendarz
   - zmiana koloru tła strony
