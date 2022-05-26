@@ -11,7 +11,7 @@
     }
     #header 
     {
-        background-color: #602020;
+        background-color: #d77f20;
         font-size: 30px;
         padding: 10px;
         text-align: center;
@@ -29,7 +29,7 @@
         text-align: center;
         padding: 10px;
         font-size: 15px;
-        background-color: #602020;
+        background-color: #d77f20;
         color: #ffffff;
         border-top: 2px dashed #aaa;
         border-bottom: 2px dashed #aaa;
@@ -43,7 +43,7 @@
             font-size: 20px;
             color: white;
             float: left;
-            background-color: #602020;
+            background-color: #d77f20;
             height: 730px;
             padding: 15px;
             width: 17%;
@@ -66,7 +66,7 @@
         #sidebarR {
             color: #ffffff;
             float: left;
-            background-color: #602020;
+            background-color: #d77f20;
             height: 740px;
             min-width: 190px;
             border-left: 2px dashed #aaa;
@@ -74,7 +74,7 @@
         }
     #footer 
     {
-        background-color: #602020;
+        background-color: #d77f20;
         height: 60px;
         padding: 10px;
         text-align: center;
@@ -198,7 +198,7 @@
     }
 
     #header {
-        background-color: #602020;
+        background-color: #d77f20;
         font-size: 25px;
         color: white;
         text-align: center;
@@ -208,7 +208,7 @@
     #hello {
         text-align: center;
         font-size: 15px;
-        background-color: #602020;
+        background-color: #d77f20;
         color: #ffffff;
         border-top: 2px dashed #aaa;
         border-bottom: 2px dashed #aaa;
@@ -219,7 +219,7 @@
     #sidebar {
         font-size: 20px;
         color: white;
-        background-color: #602020;
+        background-color: #d77f20;
         letter-spacing: 2px;
         padding: 15px 20px 15px 20px;
         min-height: 60px;
@@ -230,7 +230,7 @@
     {
         font-size: 20px;
         color: white;
-        background-color: #602020;
+        background-color: #d77f20;
         letter-spacing: 2px;
         min-height: 60px;
         padding: 15px 20px 15px 20px;
@@ -250,13 +250,13 @@
 
     #sidebarR {
         color: #ffffff;
-        background-color: #602020;
+        background-color: #d77f20;
         margin: 0px;
         border-top: 2px dashed #aaa;
     }
 
     #footer {
-        background-color: #602020;
+        background-color: #d77f20;
         text-align: center;
         border-top: 2px dashed #aaa;
         color: #ffffff;
