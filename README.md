@@ -23,4 +23,4 @@ Strona internetowa powstała na własne potrzeby w celu nauki tworzenia stron in
   - HTML
   - CSS
   - JavaScript
-  - jQuery
+    - biblioteka jQuery
