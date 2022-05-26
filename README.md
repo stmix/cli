@@ -17,7 +17,7 @@ Strona internetowa powstała na własne potrzeby w celu nauki tworzenia stron in
   - zegar i kalendarz
   - zmiana koloru tła strony
   - samochód jeżdżący z prędkością, którą ustawimy na sliderze
-  - gadżet: prędkościomierz analogowy z wyświetlaczem elektronicznym
+  - gadżet: prędkościomierz analogowy z wyświetlaczem elektronicznym wyświetlający prędkość ustawianą sliderem
 
 ## Wykorzystane technologie:
   - HTML
