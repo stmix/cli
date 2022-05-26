@@ -1,5 +1,5 @@
 # Strona internetowa nt. motoryzacji
-Strona internetowa dotyczy głownie motoryzacji jako jednej z moich pasji. Znajdują się na niej ciekawostki i rekordy, z którymi powinien zapozanać się każdy fan 4 kółek.
+Strona internetowa dotyczy głownie motoryzacji jako jednej z moich pasji. Znajdują się na niej ciekawostki i rekordy, z którymi powinien zapoznać się każdy fan 4 kółek.
 
 ## Cel
 Strona internetowa powstała na własne potrzeby w celu nauki tworzenia stron internetowych.
