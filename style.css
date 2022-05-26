@@ -31,8 +31,8 @@
         font-size: 15px;
         background-color: #602020;
         color: #ffffff;
-        border-top: 2px dashed #aaa;
-        border-bottom: 2px dashed #aaa;
+        border-top: 2px solid #212121;
+        border-bottom: 2px solid #212121;
     }
     #cont
     {
@@ -48,7 +48,7 @@
             padding: 15px;
             width: 17%;
             letter-spacing: 2px;
-            border-right: 2px dashed #aaa;
+            border-right: 2px solid #212121;
         }
         #sidebar a
         {
@@ -69,7 +69,7 @@
             background-color: #602020;
             height: 740px;
             min-width: 190px;
-            border-left: 2px dashed #aaa;
+            border-left: 2px solid #212121;
             padding: 10px;
         }
     #footer 
@@ -78,13 +78,13 @@
         height: 60px;
         padding: 10px;
         text-align: center;
-        border-top: 2px dashed #aaa;
+        border-top: 2px solid #212121;
         color: #ffffff;
         clear: both;
     }
     .guzik
     {
-        border: 2px dashed #aaa;
+        border: 2px solid #212121;
         background-color: #111111;
         color: #ffffff;
         text-align: center;
@@ -210,8 +210,8 @@
         font-size: 15px;
         background-color: #602020;
         color: #ffffff;
-        border-top: 2px dashed #aaa;
-        border-bottom: 2px dashed #aaa;
+        border-top: 2px solid #212121;
+        border-bottom: 2px solid #212121;
         margin: 0px;
         padding: 20px;
     }
@@ -224,7 +224,7 @@
         padding: 15px 20px 15px 20px;
         min-height: 60px;
         text-align: center;
-        border-bottom: 2px dashed #aaa;
+        border-bottom: 2px solid #212121;
     }
     #sidebar 
     {
@@ -234,7 +234,7 @@
         letter-spacing: 2px;
         min-height: 60px;
         padding: 15px 20px 15px 20px;
-        border-bottom: 2px dashed #aaa;
+        border-bottom: 2px solid #212121;
     }
     #sidebar a 
     {
@@ -252,19 +252,19 @@
         color: #ffffff;
         background-color: #602020;
         margin: 0px;
-        border-top: 2px dashed #aaa;
+        border-top: 2px solid #212121;
     }
 
     #footer {
         background-color: #602020;
         text-align: center;
-        border-top: 2px dashed #aaa;
+        border-top: 2px solid #212121;
         color: #ffffff;
         padding-bottom: 20px;
     }
 
     .guzik {
-        border: 2px dashed #aaa;
+        border: 2px solid #212121;
         background-color: #111111;
         color: #ffffff;
         line-height: 38px;
