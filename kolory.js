@@ -27,5 +27,5 @@ function wczytajKolorBiezacy()
 
 function defaultColor()
 {
-	localStorage.setItem('kolorZapis', "#602020");
+	localStorage.setItem('kolorZapis', "#d77f20");
 }
