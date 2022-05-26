@@ -10,7 +10,8 @@ Podstrony:
   - Rekordy,
   - Najszybszy samochód świata,
   - Ciekawostki,
-  - O autorze,
+  - O autorze
+  
 Inne funkcjonalności
   - elementy biblioteki jQuery np. slider,
   - zegar i kalendarz
